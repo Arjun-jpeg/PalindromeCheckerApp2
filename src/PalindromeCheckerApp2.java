@@ -1,8 +1,9 @@
-public class uc1 {
+import java.util.Scanner;
+class uc1 {
     public void show() {
-        printf("Welcome to palindrome checker app");
-        printf("Version 1.0");
-        printf("System initialized successfully");
+        System.out.println("Welcome to palindrome checker app");
+        System.out.println("Version 1.0");
+        System.out.println("System initialized successfully");
     }
 }
 public class PalindromeCheckerApp2{

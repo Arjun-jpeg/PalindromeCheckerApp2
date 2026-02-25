@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class uc1 {
+class Uc1 {
     public void show() {
         System.out.println("Welcome to palindrome checker app");
         System.out.println("Version 1.0");
@@ -8,7 +8,7 @@ class uc1 {
 }
 public class PalindromeCheckerApp2{
     public static void main(String[] args){
-      uc1 ob1=new uc1();
+      Uc1 ob1=new Uc1();
       ob1.show();
     }
 }

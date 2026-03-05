@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Stack;
+
 class uc1 {
     public void show() {
         System.out.println("Welcome to palindrome checker app");
@@ -75,16 +77,43 @@ class Uc4{
         }
     }
 }
+class Uc5{
+    String name;
+    public void stack() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the string to check using Stack: ");
+        name = input.nextLine();
+        Stack<Character> stk=new Stack<>();
+        for(int i=0;i<name.length();i++){
+            stk.push(name.charAt(i)); //pushes madam from 0 to 4 into stack
+        }
+        boolean palin=true;
+        for(int i=0;i<name.length()/2;i++){
+            if(name.charAt(i)!=stk.pop()){ //0th index 'm' is compared with stack pops last index(4th) 'm'
+                palin=false;
+                break;
+            }
+        }
+        if(palin){
+            System.out.println("Palindrome verified: " +name);
+        }
+        else{
+            System.out.println("Not a Palindrome: " +name);
+        }
+    }
+}
 public class PalindromeCheckerApp2{
     public static void main(String[] args){
       uc1 ob1=new uc1();
       Uc2 ob2=new Uc2();
       Uc3 ob3=new Uc3();
       Uc4 ob4=new Uc4();
+      Uc5 ob5=new Uc5();
       ob1.show();
       System.out.println("Status: " +ob2.find());
       ob3.reverse();
       ob4.arraycheck();
+      ob5.stack();
     }
 }
 

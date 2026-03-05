@@ -41,13 +41,13 @@ class Uc3 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter a palindrome string to reverse it and verify: ");
-<<<<<<< Updated upstream
+
         beforerev=input.nextLine();
         for(int i=beforerev.length()-1;i>=0;i--){
             afterrev=afterrev+beforerev.charAt(i);
         }
         if(afterrev.equals(beforerev)){
-=======
+
         beforerev = input.nextLine();
 
         StringBuilder afterrev = new StringBuilder();
@@ -57,7 +57,7 @@ class Uc3 {
         }
 
         if(afterrev.toString().equals(beforerev)){
->>>>>>> Stashed changes
+
             System.out.println("Palindrome verified");
             System.out.println("Before: " + beforerev);
             System.out.println("After reverse: " + afterrev);
